@@ -1,0 +1,24 @@
+html {
+    font-family: 'DM Mono', monospace;
+    background-image: linear-gradient(10deg, rgb(1, 116, 152), rgb(13, 213, 212));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.spinning {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.hover-shadow-hard-pink:hover {
+    box-shadow: 6px 6px 0 0 hotpink;
+}
