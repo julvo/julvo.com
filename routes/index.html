@@ -5,21 +5,21 @@ title: Home
 
 {{define "body"}}
 
-<section class="flex flex-row items-start">
-    <img src="/img/strokes.svg" class="w-16 pt-12" alt="" style="filter: invert()"/>
+<section class="flex flex-row items-start mt-4 mb-4">
+    <img src="/img/strokes.svg" class="w-16 pt-12 -ml-8 md:ml-0" alt="" style="filter: invert()"/>
     <div>
-        <h1 class="text-xl font-bold p-4 pt-12 w-4/5">
+        <h1 class="text-xl font-bold p-4 pt-12 md:w-4/5">
             <span class="text-black" style="background: rgb(252, 247, 32)">
                     Welcome to julvo.com, Julian's little site about programming, machine learning and curiosities.
             </span>
         </h1>
         <form>
-            <button class="px-4 py-2 border-4 border-white m-4 hover:bg-pink-500 text-white transform hover:scale-105">
+            <a href="mailto:contact@julvo.com" class="inline-block px-4 py-2 border-4 border-white m-4 hover:bg-pink-500 text-white transform hover:scale-105 hover:border-pink-500">
                 Contact
-            </button>
+            </a>
         </form>
     </div>
-    <img src="/img/pyramid.svg" class="w-1/4 mt-2" style="filter: invert()" alt=""/>
+    <img src="/img/pyramid.svg" class="w-1/4 mt-2 mr-16 spinning hidden md:block" style="filter: invert()" alt=""/>
 </section>
 
 <section class="pt-6">
