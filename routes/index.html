@@ -9,8 +9,8 @@ title: Home
     <img src="/img/strokes.svg" class="w-16 pt-12 -ml-8 md:ml-0" alt="" style="filter: invert()"/>
     <div>
         <h1 class="text-xl font-bold p-4 pt-12 md:w-4/5">
-            <span class="text-black" style="background: rgb(252, 247, 32)">
-                    Welcome to julvo.com, Julian's little site about programming, machine learning and curiosities.
+            <span class="text-black tracking-tight" style="background: rgb(252, 247, 32)">
+                    Welcome to julvo.com, Julian's little site about machine learning, programming and various curiosities.
             </span>
         </h1>
         <form>
@@ -24,13 +24,13 @@ title: Home
 
 <section class="pt-6">
     <ul class="flex flex-row flex-wrap">
-        {{range .Routes | filterFilePath "**/posts/*.md" }}
+        {{range .Routes | filterFilePath "**/posts/*/index.md" | sortDesc "date" }}
         <li class="w-full md:w-2/4 lg:w-{{with .Meta.width}}{{.}}{{else}}1{{end}}/5 p-4">
             <a href="{{.Href}}" class="inline-block w-full text-black bg-white cursor-pointer hover-shadow-hard-pink transform hover:scale-105">
                 {{with .Meta.img}} 
                 <img src="{{.}}" class="w-max-full bg-transparent mx-auto" alt="" />
                 {{end}}
-                <div class="pt-2 font-bold text-lg p-2">
+                <div class="pt-2 font-bold text-lg p-2 tracking-tight leading-6">
                     {{.Meta.title}}
                 </div>
                 <div class="px-2">
@@ -43,31 +43,7 @@ title: Home
             </a>
         </li>
         {{end}}
-
-       <!-- Deploying a background worker with Github Actions
-        Deploying Node/Express apps with Vercel's now.sh
-        Deploying SPAs with Firebase
-
-        <li>Deploy SPA, API, static page with Firebase and Cloud Run</li>
-        <li>Weekend Project: GPT app name generator</li>
-        <li>github.com/julvo/htmlgo</li>
-        <li>Weekend Project: A Neural Image Editor</li>
-        <li>Weekend Project: A vocabulary-learning app for advanced speakers</li>
     </ul>
-
-    <h2 class="title-font font-bold text-gray-400 text-4xl lg:text-6xl p-4 mt-16">
-        Paper TLDRs
-    </h2>
-
-    <ul class="block">
-        <li class="flex flex-row p-4">
-            <img src="/img/julvo_sm.png" class="w-32" />
-            <h3 class="ml-8 font-bold title-font">
-                Some Paper Pupu
-            </h3>
-        </li>
-
-    </ul>-->
 
 </section>
 

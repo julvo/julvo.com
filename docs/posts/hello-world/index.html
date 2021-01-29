@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reloading Python source code of a running programme without losing state - julvo.com</title>
+        <title>Welcome julvo.com to the world wide web - julvo.com</title>
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png" />
@@ -28,14 +28,15 @@
 
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <style>
             h1, h2, h3, h4, h5, h6 {
                 font-weight: bold;
                 font-family: 'DM Mono', monospace;
+                letter-spacing: -.04em;
+                color: black;
             }
             h1 {
                 font-size: 200%;
@@ -62,16 +63,23 @@
                 line-height: 1.5;
             }
             p {
-                margin-top: .4rem;
-                margin-bottom: .4rem;
-                font-family: 'Inter', Arial, Helvetica, sans-serif;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
             }
             pre {
                 padding: 4px;
-                font-size: .9rem;
-                margin-top: .4rem;
-                margin-bottom: .4rem;
+                font-size: .85em;
+                margin-top: .4em;
+                margin-bottom: .4em;
                 line-height: 1.35;
+            }
+
+            a {
+                color: hotpink;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         </style>
     </head>
@@ -87,10 +95,10 @@
         </div>
 
         <div class="flex flex-row">
-            <a class="mr-4 inline-block h-full text-orange-600 hover:text-pink-500 flex-grow-0 flex-shrink-0" href="https://soundcloud.com/inocs" target="_blank">
+            <a class="mr-4 inline-block h-full text-orange-500 hover:text-pink-500 flex-grow-0 flex-shrink-0" href="https://soundcloud.com/inocs" target="_blank">
                 <i class="fab fa-soundcloud fa-2x h-full"></i>
             </a>
-            <a class="mr-4 inline-block h-full text-blue-700 hover:text-pink-500 flex-grow-0 flex-shrink-0" href="https://twitter.com/julvos" target="_blank">
+            <a class="mr-4 inline-block h-full text-blue-600 hover:text-pink-500 flex-grow-0 flex-shrink-0" href="https://twitter.com/julvos" target="_blank">
                 <i class="fab fa-twitter fa-2x h-full"></i>
             </a>
             <a class="mr-2 inline-block h-full text-gray-800 hover:text-pink-500 flex-grow-0 flex-shrink-0" href="https://github.com/julvo" target="_blank">
@@ -100,23 +108,20 @@
     </div>
 </nav>
 
-        <main class="container mx-auto bg-white p-4 md:p-12 -mt-12 pt-24 md:pt-32 min-h-screen">
-            <div class="inline-block mb-8">
-                <h1 class="inline">Reloading Python source code of a running programme without losing state</h1>
+        <main class="container mx-auto bg-white p-4 md:p-12 sm:px-12 lg:px-64 -mt-12 pt-24 md:pt-32 min-h-screen text-sm md:text-base text-gray-800">
+            <div class="inline-block mb-2">
+                <h1 class="inline">Welcome julvo.com to the world wide web</h1>
                 
                 <span class="inline-block text-xs mb-1 mr-2">
-                    #python
+                    #NewWebsiteNewMe
                 </span>
                 
             </div>
-            <p>Here could be a paragraph with lots of interesting content</p>
-<p><img src="https://github.com/julvo/reloading/raw/master/examples/demo/demo.gif" alt="demo"></p>
-<pre style="color:#f8f8f2;background-color:#282a36"><span style="color:#ff79c6">from</span> reloading <span style="color:#ff79c6">import</span> reloading
+            <p><img src="https://media.giphy.com/media/LQzvI8zbzrwZliUj3V/giphy.gif" alt="Hello world"></p>
+<p>Getting bored of my portfolio page <a href="https://julianvossen.de">julianvossen.de</a> I wanted to create a site that is more interesting and more fun.</p>
+<p>I'm not exactly sure what kind of content I'll publish here. The only criterion for a post is that I need to find it interesting myself. Probably, it's going to be a mix of technical posts, notes on stuff I find intriguing and records for my future self.</p>
+<p>I will tweet posts that I deem sufficiently interesting. Feel free to follow <a href="https://twitter.com/julvos">@julvos</a> if you'd like to be notified.</p>
 
-<span style="color:#ff79c6">for</span> i <span style="color:#ff79c6">in</span> reloading(<span style="color:#8be9fd;font-style:italic">range</span>(<span style="color:#bd93f9">100</span>)):
-    <span style="color:#ff79c6">print</span>(i)
-
-</pre>
         </main>
     </body>
 </html>

@@ -28,14 +28,15 @@
 
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <style>
             h1, h2, h3, h4, h5, h6 {
                 font-weight: bold;
                 font-family: 'DM Mono', monospace;
+                letter-spacing: -.04em;
+                color: black;
             }
             h1 {
                 font-size: 200%;
@@ -62,23 +63,30 @@
                 line-height: 1.5;
             }
             p {
-                margin-top: .4rem;
-                margin-bottom: .4rem;
-                font-family: 'Inter', Arial, Helvetica, sans-serif;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-family: 'Open Sans', Arial, Helvetica, sans-serif;
             }
             pre {
                 padding: 4px;
-                font-size: .9rem;
-                margin-top: .4rem;
-                margin-bottom: .4rem;
+                font-size: .85em;
+                margin-top: .4em;
+                margin-bottom: .4em;
                 line-height: 1.35;
+            }
+
+            a {
+                color: hotpink;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         </style>
     </head>
     <body>
         {{template "navbar" .}}
-        <main class="container mx-auto bg-white p-4 md:p-12 -mt-12 pt-24 md:pt-32 min-h-screen">
-            <div class="inline-block mb-8">
+        <main class="container mx-auto bg-white p-4 md:p-12 sm:px-12 lg:px-64 -mt-12 pt-24 md:pt-32 min-h-screen text-sm md:text-base text-gray-800">
+            <div class="inline-block mb-2">
                 <h1 class="inline">{{.Route.Meta.title}}</h1>
                 {{range .Route.Meta.tags}}
                 <span class="inline-block text-xs mb-1 mr-2">
